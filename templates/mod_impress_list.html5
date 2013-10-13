@@ -1,0 +1,31 @@
+
+<link href="<?php echo $this->css; ?>" rel="stylesheet" />
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+	<div class="fallback-message">
+	    <p>Ihr browser <b>unterstüztz die vorhandenen features von </b>  impress.js, leider nicht, also bekommen Sie eine einfacherer version der Präsentation zu sehen.</p>
+	    <p>Für das beste Erlebnis benutzen Sie bitte die neuste Version von <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> . Danke!</p>
+	</div>
+
+	<div id="impress"> 
+		<?php foreach ($this->slides as $slide): ?>
+		 <div class="step slide" <?php echo $slide['coordinates'] ?> >
+		 	<h2><?php echo $slide['title']; ?></h2>
+		 	<?php echo $slide['content']; ?>
+			
+		</div>
+		<?php endforeach; ?>
+	 
+	</div>
+</div>
+
+<div class="hint">
+    <p>Nutzen Sie die Leertaste oder Pfeiltasten um zu navigieren</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="<?php echo $this->js; ?>"></script>
+<script>impress().init();</script>
