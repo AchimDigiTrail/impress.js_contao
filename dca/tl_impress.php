@@ -1,9 +1,11 @@
 <?php
-
-
 /**
- * Table tl_screencast
+ * Copyright by DigiTrail
  */
+
+
+
+
 $GLOBALS['TL_DCA']['tl_impress'] = array
 (
 
