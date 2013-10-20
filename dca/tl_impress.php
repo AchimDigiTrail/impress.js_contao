@@ -76,7 +76,7 @@ $GLOBALS['TL_DCA']['tl_impress'] = array
 	'palettes' => array
 	(
 		'__selector__'  => array('type', 'platform', 'defineSize'),
-		'default'       => '{title_legend},title;{content_legende},content;{settings_legend},coordinates,scale;'	
+		'default'       => '{title_legend},title;{content_legende},content;{settings_legend},css_class,coordinates,scale;'	
 		
 	),
 
@@ -128,6 +128,21 @@ $GLOBALS['TL_DCA']['tl_impress'] = array
 			),
 			'sql'       => "text NULL"
 		),
+		'css_class'  => array
+		(
+			'label'     => &$GLOBALS['TL_LANG']['tl_impress']['css_class'],
+			'inputType' => 'text',
+			'exclude'   => true,
+			'sorting'   => true,
+			'flag'      => 1,
+			'reference' => &$GLOBALS['TL_LANG']['tl_impress'],
+			'eval'      => array(
+				'includeBlankOption' => true,
+				'tl_class'           => 'w50',
+				'allowHtml'			=> true
+			),
+			'sql'       => "text NULL"
+		),
 		'coordinates'  => array
 		(
 			'label'     => &$GLOBALS['TL_LANG']['tl_impress']['coordinates'],
@@ -138,7 +153,8 @@ $GLOBALS['TL_DCA']['tl_impress'] = array
 			'reference' => &$GLOBALS['TL_LANG']['tl_impress'],
 			'eval'      => array(
 				'includeBlankOption' => true,
-				'tl_class'           => 'w50'
+				'tl_class'           => 'w50',
+				'allowHtml'			=> true
 			),
 			'sql'       => "text NULL"
 		),

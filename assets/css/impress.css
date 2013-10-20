@@ -28,6 +28,9 @@
     doesn't do any harm and gives us a fresh start.
 */
 
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,6 +76,10 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+h2 {
+    font-size: 40px;
 }
 
 /*
@@ -717,3 +724,12 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+
+
+.other_css {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 300px;
+}
+

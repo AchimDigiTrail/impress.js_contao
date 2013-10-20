@@ -13,6 +13,10 @@ $GLOBALS['TL_LANG']['tl_impress']['content'][1] = 'Einen neuen Slide anlegen';
 
 $GLOBALS['TL_LANG']['tl_impress']['settings_legend'] = 'Einstellungen/Koordinaten';
 
+
+$GLOBALS['TL_LANG']['tl_impress']['css_class'][0] = 'CSS Class';
+$GLOBALS['TL_LANG']['tl_impress']['css_class'][1] = 'Fügen Sie hier weitere CSS klasse hinzu';
+
 $GLOBALS['TL_LANG']['tl_impress']['coordinates'][0] = 'Koordinaten im Raum';
 $GLOBALS['TL_LANG']['tl_impress']['coordinates'][1] = 'Geben Sie hier die Koordinaten im Raumein.';
 

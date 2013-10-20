@@ -18,6 +18,7 @@ ClassLoader::addClasses(array
 (
 	// Modules
 	'ModuleImpressList' => 'system/modules/impress/modules/ModuleImpressList.php',
+	'ImpressFEParser'   => 'system/modules/impress/modules/ImpressFEParser.php',
 ));
 
 

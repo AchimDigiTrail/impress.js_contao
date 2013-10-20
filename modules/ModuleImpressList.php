@@ -11,6 +11,8 @@ class ModuleImpressList extends Module
 	/**
 	 * Compile the current element
 	 */
+
+
 	protected function compile()
 	{
 		$this->loadLanguageFile('tl_impress');
@@ -44,5 +46,15 @@ class ModuleImpressList extends Module
 		$this->Template->settings = $settings;
 		//$this->Template->filterByType = !$this->screencast_filter_type;
 		//$this->Template->typeFilter   = $typeFilter;
+	}
+	public function outputFrontendTemplateImpress($strContent, $strTemplate)
+	{
+	    if ($strTemplate == 'fe_page')
+	    {
+	        //$strContent = "";
+	    }
+	       //echo $strTemplate;
+
+    return $strContent;
 	}
 }
