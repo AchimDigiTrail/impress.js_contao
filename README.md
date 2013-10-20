@@ -1,8 +1,11 @@
 impress.js for contao 3.1.X
 =================
 
-It's a first commit, just started development
+Demonstrates the working impress.js in contao
 
-Impress.js is working as a FE module, take that as a start
+please visit: sandbox.digitrail.eu for a demo
+
+
+Impress.js is working as a FE module
 
 
